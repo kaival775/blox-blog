@@ -1,6 +1,6 @@
 # Blog Application
 
-> **Note: This is a practice project created for learning purposes.**
+> **Note: This is a practice project created for learning purposes. Also some pages are not responsive yet. **
 
 A full-stack blog application built with React.js, Node.js, Express.js, and MongoDB. Features user authentication, post management, category management, file uploads, and a modern dark/light theme interface.
 

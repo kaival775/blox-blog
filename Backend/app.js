@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
+const cors = require('cors');
 const dotenv = require('dotenv');
 dotenv.config();
 
@@ -20,24 +21,18 @@ app.use(express.json({limit: '500mb'}));
 app.use(bodyParser.urlencoded({ extended: true, limit: '500mb' }));
 app.use(morgan("dev"));
 
-// CORS middleware
-app.use((req, res, next) => {
-  const allowedOrigins = [
+// CORS configuration
+const corsOptions = {
+  origin: [
     'http://localhost:5173',
-    'https://your-frontend.vercel.app' // Replace with your actual frontend URL
-  ];
-  const origin = req.headers.origin;
-  if (allowedOrigins.includes(origin)) {
-    res.header('Access-Control-Allow-Origin', origin);
-  }
-  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
-  if (req.method === 'OPTIONS') {
-    res.sendStatus(200);
-  } else {
-    next();
-  }
-});
+    'https://blox-blog-app.vercel.app'
+  ],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept', 'Authorization']
+};
+
+app.use(cors(corsOptions));
 
 // Health check endpoint
 app.get('/api/v1/health', (req, res) => {

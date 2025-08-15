@@ -1,0 +1,11 @@
+.privateNav{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: beige;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+

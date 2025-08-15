@@ -1,0 +1,122 @@
+.postList{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.newPostBtn button{
+    background-color: black;
+    color: aliceblue;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+}
+
+.postListContainer{
+    width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    h2{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.postCards{
+    padding: 20px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 225px 225px 225px 225px 225px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.postCard{
+    background-color: bisque;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    height: auto;
+}
+
+.postCard:hover{
+    transform: scale(1.02);
+}
+
+.newPostContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.newPostForm{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    background-color: antiquewhite;
+    color: black;
+}
+
+.newPostTitle 
+{   width: 100%;
+    input{
+    width: 100%;
+}
+}
+
+.newPostSubmit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input{
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        font-size: 15px;
+        
+    }
+}
+.detailsPost{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.updatePostBtn{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.postDetailsContainer{
+    width: 50%;
+    background-color: bisque;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    height: auto;
+}

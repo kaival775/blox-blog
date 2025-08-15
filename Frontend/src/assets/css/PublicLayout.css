@@ -1,0 +1,97 @@
+.publicNav{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: antiquewhite;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+/* auth container */
+
+.authContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.authForm {
+    padding: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 30%;
+    min-height: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.authFormGroup{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+    input{
+        width: 100%;
+        height: 30px;
+    }
+}
+
+.authFormTitle{
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.authFormBtn{
+    margin-top:10px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: rebeccapurple;
+    color: white;
+    cursor: pointer;
+}
+
+.error{
+    color: red;
+    p{
+        margin: 0 !important;
+    }
+}
+
+/* test */
+/* 
+.wrapperContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    background-color: aliceblue;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 20px;
+    background-color: antiquewhite;
+    color: black;
+}
+
+.bgrotate{
+    position: absolute;
+    height: 60%;
+    width: 30%;
+    background-color: black;
+    transform: rotate(50deg);
+} */

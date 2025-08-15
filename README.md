@@ -11,7 +11,7 @@ A full-stack blog application built with React.js, Node.js, Express.js, and Mong
 - Secure login/logout system
 - JWT-based authentication
 - Password reset functionality
-- Role-based access control (Admin, Editor, User)
+- Role-based access control (Admin: 1, Editor: 2, User: 3)
 
 ### Post Management
 - Create, read, update, delete posts
@@ -183,12 +183,6 @@ blog/
 - System preference detection
 - Persistent theme selection
 - Smooth transitions
-
-### Responsive Design
-- Mobile-first approach
-- Flexible grid layouts
-- Touch-friendly interfaces
-- Optimized for all screen sizes
 
 ### User Experience
 - Loading states
